@@ -1,0 +1,4 @@
+<button igxButton="raised" igxRipple [igxToggleAction]="dialogWindow" class="button">Button</button>
+<igx-dialog message="Send the email now?" leftButtonLabel="No" rightButtonLabel="Yes" [closeOnOutsideSelect]="false" [closeOnEscape]="false" (leftButtonSelect)="dialogWindow.toggle()" (rightButtonSelect)="dialogWindow.toggle()" #dialogWindow class="dialog-window">
+  <igx-dialog-title>Confirmation</igx-dialog-title>
+</igx-dialog>
